@@ -1,2 +1,2 @@
-# TFM_bioinform-tica_laurafortaznrar
+# TFM_bioinformatica_laurafortaznar
 TFM bioinformática UNIR
