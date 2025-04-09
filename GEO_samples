@@ -1,0 +1,44 @@
+# Información de muestras GEO utilizadas
+
+Este proyecto utiliza datos de secuenciación de núcleos individuales (snRNA-Seq) del estudio [GSE138852](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE138852) y [GSE147528] (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi) obtenidos del **Gene Expression Omnibus (GEO)**.
+En este estudio, se analizaron núcleos individuales (snRNA-seq) de astrocitos aislados de diferentes regiones cerebrales de cerebros humanos con Alzheimer (AD) y controles sanos.
+
+GSE138852 → contiene datos de astrocitos de una región específica (como la entorhinal cortex).
+GSE147528 → puede tener otras regiones o condiciones, quizás una validación o un dataset complementario.
+
+## Regiones cerebrales incluidas
+
+- **SFG**: Surco frontal superior
+- **EC**: Corteza entorrinal
+
+## Relación GSM ID - Muestra
+Los GSM son identificadores únicos para cada muestra individual de un experimento en GEO.
+
+**GSE147528**
+ GSM ID      | Etiqueta | Región cerebral         | Donante | Braak stage | Edad | Sexo | Diagnóstico   | Lote |
+|-------------|----------|--------------------------|---------|--------------|------|------|----------------|------|
+| GSM4432635  | SFG2     | Superior frontal gyrus   | 2       | 0            | 60   | Male | Control        | C    |
+| GSM4432636  | SFG1     | Superior frontal gyrus   | 1       | 6            | 87   | Female | Alzheimer     | A    |
+| GSM4432645  | EC2      | Entorhinal cortex        | 5       | 5            | 91   | Male | Alzheimer     | B    |
+| GSM4432646  | EC1      | Entorhinal cortex        | 3       | 0            | 72   | Female | Control       | B    |
+
+**GSE138852**
+| GSM ID      | Descripción                                                 | Diagnóstico | Sujetos |
+|-------------|-------------------------------------------------------------|-------------|---------|
+| GSM4120422  | Human Entorhinal Cortex of aged AD individuals AD7-AD8      | Alzheimer   | AD7–AD8 |
+| GSM4120423  | Human Entorhinal Cortex of aged AD individuals AD5-AD6      | Alzheimer   | AD5–AD6 |
+| GSM4120424  | Human Entorhinal Cortex of aged AD individuals AD3-AD4      | Alzheimer   | AD3–AD4 |
+| GSM4120429  | Human Entorhinal Cortex of aged AD individuals AD1-AD2      | Alzheimer   | AD1–AD2 |
+| GSM4120425  | Human Entorhinal Cortex of aged Healthy individuals Ct5-Ct6 | Control     | Ct5–Ct6 |
+| GSM4120426  | Human Entorhinal Cortex of aged Healthy individuals Ct3-Ct4 | Control     | Ct3–Ct4 |
+| GSM4120427  | Human Entorhinal Cortex of aged Healthy individuals Ct1-Ct2 | Control     | Ct1–Ct2 |
+| GSM4120428  | Human Entorhinal Cortex of aged Healthy individuals Ct7-Ct8 | Control     | Ct7–Ct8 |
+
+## Diagnósticos y metadatos
+
+Puedes consultar los metadatos individuales de cada muestra directamente en GEO, por ejemplo:
+
+- [GSM4432635](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4432635) (SFG2) – Alzheimer
+- [GSM4432646](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4432646) (EC1) – Control
+
+*Más información disponible en el artículo de referencia y en la sección "Sample list" del estudio en GEO.*
