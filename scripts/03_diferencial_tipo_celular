@@ -44,4 +44,4 @@ write.csv(results_astro, "DEG_astro_AD_vs_Control.csv")
 EnhancedVolcano(results_astro, lab = rownames(results_astro), x = "logFC", y = "P.Value", pCutoff = 0.05, FCcutoff = 1, title = "astro: Alzheimer vs Control")
 
 # NEURONAS
-THay muy pocos pacientes con células neuronales disponibles (la mayoría son del tipo undetermined), por lo tanto no realizaremos análisis a nivel neuronal.  
+Hay muy pocos pacientes con células neuronales disponibles (la mayoría son del tipo undetermined), por lo tanto no realizaremos análisis a nivel neuronal.  
