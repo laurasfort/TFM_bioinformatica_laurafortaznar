@@ -1,7 +1,7 @@
 #Instalación y carga de paquetes
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
-BiocManager::install(c("GEOquery", "limma", "Biobase", "pheatmap", "EnhancedVolcano"))
+BiocManager::install(c("GEOquery", "limma", "Biobase", "pheatmap", "EnhancedVolcano", "VennDiagram"))
 
 library(GEOquery)
 library(limma)
