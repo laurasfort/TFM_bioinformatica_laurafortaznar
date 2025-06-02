@@ -10,6 +10,7 @@ library(pheatmap)
 library(EnhancedVolcano)
 library(tidyverse)
 library(dplyr)
+library(VennDiagram)
 
 #Directorio de trabajo
 setwd("~/Documents/BIOINF_UNIR/TFM/")
