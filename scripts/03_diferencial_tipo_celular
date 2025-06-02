@@ -44,16 +44,4 @@ write.csv(results_astro, "DEG_astro_AD_vs_Control.csv")
 EnhancedVolcano(results_astro, lab = rownames(results_astro), x = "logFC", y = "P.Value", pCutoff = 0.05, FCcutoff = 1, title = "astro: Alzheimer vs Control")
 
 # NEURONAS
-cov_neuron <- covariates %>% filter(oupSample.cellType_batchCond %in% c("neuron_AD", "neuron_Control"))
-cov_neuron$group <- paste(cov_neuron$oupSample.subclustCond, cov_neuron$oupSample.subclustID, sep = "_")
-counts_neuron <- counts[, cov_neuron$X][, match(cov_neuron$X, colnames(counts))]
-counts_neuron_pseudobulk <- t(rowsum(t(counts_neuron), group = cov_neuron$group))
-group_labels_neuron <- ifelse(grepl("AD", colnames(counts_neuron_pseudobulk)), "AD", "Control")
-design_neuron <- model.matrix(~ 0 + factor(group_labels_neuron))
-colnames(design_neuron) <- levels(factor(group_labels_neuron))
-log_counts_neuron <- log2(counts_neuron_pseudobulk + 1)
-fit_neuron <- lmFit(log_counts_neuron, design_neuron)
-fit2_neuron <- eBayes(contrasts.fit(fit_neuron, makeContrasts(AD - Control, levels = design_neuron)))
-results_neuron <- topTable(fit2_neuron, adjust = "fdr", number = Inf)
-write.csv(results_neuron, "DEG_neuron_AD_vs_Control.csv")
-EnhancedVolcano(results_neuron, lab = rownames(results_neuron), x = "logFC", y = "P.Value", pCutoff = 0.05, FCcutoff = 1, title = "neuron: Alzheimer vs Control")
+THay muy pocos pacientes con células neuronales disponibles (la mayoría son del tipo *undetermined*), por lo tanto no realizaremos análisis a nivel neuronal.  
