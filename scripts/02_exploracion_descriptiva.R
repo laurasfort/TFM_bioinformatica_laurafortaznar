@@ -1,7 +1,13 @@
-# Tablas exploratorias
+# Exploración de tipos celulares
 table(covariates$oupSample.cellType)
+
+# Pacientes por condición
 table(covariates$oupSample.batchCond)
+
+# Tipos celulares por grupo
 table(covariates$oupSample.cellType_batchCond)
+
+# Subclusters por condición
 table(covariates$oupSample.subclustCond, covariates$oupSample.subclustID)
 
 # Número de pacientes por grupo
